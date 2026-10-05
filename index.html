@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>我的博客 · 日常与笔记</title>
+  <meta name="description" content="记录日常、想法与图片。">
+  <link rel="stylesheet" href="assets/style.css">
+  <script src="assets/theme.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="inner">
+      <a class="brand" href="index.html">我的<span class="dot">博客</span></a>
+      <nav class="nav">
+        <a href="index.html">首页</a>
+        <a href="about.html">关于</a>
+        <button id="theme-toggle" class="theme-toggle" type="button" aria-label="切换主题">☾</button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>记录日常，留一份温度</h1>
+      <p>这里写所见、所读、所想。文章按时间倒序排列，点击卡片即可阅读全文。</p>
+    </section>
+
+    <!-- JS 渲染失败时的退化展示（仅链接到示例文章） -->
+    <noscript>
+      <ul class="fallback-list">
+        <li><a href="post.html?p=2026-10-05-welcome">你好，世界</a> — 2026年10月5日</li>
+      </ul>
+    </noscript>
+
+    <div id="status" class="status">正在加载文章…</div>
+    <div id="post-list" class="post-list" aria-live="polite"></div>
+  </main>
+
+  <footer class="site-footer">
+    <div>© <span id="year"></span> 我的博客 · 由静态站点驱动</div>
+  </footer>
+
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+  <script src="assets/main.js"></script>
+</body>
+</html>

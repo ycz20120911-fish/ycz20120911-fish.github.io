@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>关于 · 我的博客</title>
+  <link rel="stylesheet" href="assets/style.css">
+  <script src="assets/theme.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="inner">
+      <a class="brand" href="index.html">我的<span class="dot">博客</span></a>
+      <nav class="nav">
+        <a href="index.html">首页</a>
+        <a href="about.html">关于</a>
+        <button id="theme-toggle" class="theme-toggle" type="button" aria-label="切换主题">☾</button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <article class="about markdown">
+      <h1>关于</h1>
+      <p>你好，这里是我的个人博客。</p>
+      <p>这个站用来记录日常、想法和图片。文章在 <code>posts/</code> 目录里以 Markdown 形式保存，图片在 <code>images/</code>，外网通过 GitHub Pages 访问。</p>
+      <h2>联系</h2>
+      <p>可以在这里写你的联系方式或社交链接，例如：</p>
+      <ul>
+        <li>邮箱：you@example.com</li>
+        <li>GitHub：<a href="#">your-name</a></li>
+      </ul>
+      <p style="margin-top:32px;color:var(--fg-muted);font-size:14px">—— 直接编辑 <code>about.html</code> 修改本页内容。</p>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div>© <span id="year"></span> 我的博客</div>
+  </footer>
+
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>

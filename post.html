@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>文章 · 我的博客</title>
+  <meta name="description" content="一篇文章。">
+  <link rel="stylesheet" href="assets/style.css">
+  <script src="assets/theme.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="inner">
+      <a class="brand" href="index.html">我的<span class="dot">博客</span></a>
+      <nav class="nav">
+        <a href="index.html">首页</a>
+        <a href="about.html">关于</a>
+        <button id="theme-toggle" class="theme-toggle" type="button" aria-label="切换主题">☾</button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- marked 必须先于 post.js 加载 -->
+    <div id="stage" class="status">正在加载文章…</div>
+  </main>
+
+  <footer class="site-footer">
+    <div>© <span id="year"></span> 我的博客</div>
+  </footer>
+
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+  <script src="assets/marked.min.js"></script>
+  <script src="assets/post.js"></script>
+</body>
+</html>
