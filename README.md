@@ -87,8 +87,8 @@ python -m http.server 8000
 ### 步骤
 
 1. 在 GitHub 新建仓库。
-   - **推荐**命名 `marcuspete.github.io`（例如 `tom.github.io`），这样能直接根路径生效，访问 `https://marcuspete.github.io/`。
-   - 如果用别的仓库名（如 `blog`），访问地址会是 `https://marcuspete.github.io/blog/`，本站代码已经用相对路径，**可以直接工作**，无需额外配置。
+   - **推荐**命名 `ycz20120911-fish.github.io`（例如 `tom.github.io`），这样能直接根路径生效，访问 `https://ycz20120911-fish.github.io/`。
+   - 如果用别的仓库名（如 `blog`），访问地址会是 `https://ycz20120911-fish.github.io/blog/`，本站代码已经用相对路径，**可以直接工作**，无需额外配置。
 2. 把本目录所有文件推送到 `main` 分支：
 
    ```bash
@@ -96,12 +96,12 @@ python -m http.server 8000
    git add .
    git commit -m "init blog"
    git branch -M main
-   git remote add origin https://github.com/marcuspete/marcuspete.github.io.git
+   git remote add origin https://github.com/ycz20120911-fish/ycz20120911-fish.github.io.git
    git push -u origin main
    ```
 3. 打开仓库 **Settings → Pages**，Source 选 `Deploy from a branch`，分支选 `main`、文件夹选 `/ (root)`，保存。
 4. 等 1–2 分钟首次构建完成，Pages 设置页会显示访问地址。
-5. （可选）绑自定义域名：在仓库根放一个 `CNAME` 文件，里面写你的域名（如 `blog.example.com`），再到域名 DNS 加一条 CNAME 指向 `marcuspete.github.io`。
+5. （可选）绑自定义域名：在仓库根放一个 `CNAME` 文件，里面写你的域名（如 `blog.example.com`），再到域名 DNS 加一条 CNAME 指向 `ycz20120911-fish.github.io`。
 
 ### 国内访问
 
