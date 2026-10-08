@@ -5,11 +5,9 @@
   // 仓库 node id，2026-10-08 从 GitHub GraphQL repository.id 读到。
   var GISCUS_REPO = "ycz20120911-fish/ycz20120911-fish.github.io";
   var GISCUS_REPO_ID = "R_kgDOU8MX4Q";
-  // 页面评论用的讨论分类。分类 id 必须是仓库里真实存在的 DiscussionCategory id。
-  // 查询时仓库未开启 Discussions，discussionCategories 为空，所以这里先留空，
-  // 不能编造。开启讨论并出现分类后，只改这两行即可。
-  var GISCUS_CATEGORY = "Comments";
-  var GISCUS_CATEGORY_ID = "";
+  // 页面评论用的讨论分类。仓库里已有的开放讨论分类 General，id 从 GitHub 读到。
+  var GISCUS_CATEGORY = "General";
+  var GISCUS_CATEGORY_ID = "DIC_kwDOU8MX4c4DHVWN";
 
   // 与 giscus pathname 映射同一套规则：/ 与 /index.html → index，/about.html → about。
   function pagePathTerm() {
