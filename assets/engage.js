@@ -84,23 +84,32 @@
       status.textContent = text || "";
       if (timer) window.clearTimeout(timer);
       if (text) {
-        timer = window.setTimeout(function () { status.textContent = ""; }, 2000);
+        timer = window.setTimeout(function () { status.textContent = ""; }, 3000);
       }
     }
 
     copyBtn.addEventListener("click", function () {
       var url = location.href;
-      var done = function () { setStatus("已复制"); };
-      var fail = function () { setStatus("复制失败"); };
+      // execCommand 必须在这次点击里同步执行，异步 clipboard 失败后再调用就来不及了。
+      var legacyOk = fallbackCopy(url);
+      if (legacyOk) setStatus("已复制");
       if (navigator.clipboard && typeof navigator.clipboard.writeText === "function") {
-        navigator.clipboard.writeText(url).then(done, function () {
-          fallbackCopy(url) ? done() : fail();
+        var settled = false;
+        var pending = window.setTimeout(function () {
+          if (!settled && !legacyOk) setStatus("复制失败");
+        }, 1500);
+        navigator.clipboard.writeText(url).then(function () {
+          settled = true;
+          window.clearTimeout(pending);
+          setStatus("已复制");
+        }, function () {
+          settled = true;
+          window.clearTimeout(pending);
+          if (!legacyOk) setStatus("复制失败");
         });
-      } else if (fallbackCopy(url)) {
-        done();
-      } else {
-        fail();
+        return;
       }
+      if (!legacyOk) setStatus("复制失败");
     });
 
     nativeBtn.addEventListener("click", function () {
