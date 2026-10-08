@@ -14,6 +14,10 @@
     root.setAttribute("data-theme", theme);
     var btn = document.getElementById("theme-toggle");
     if (btn) btn.textContent = theme === "dark" ? "☀" : "☾";
+    // 让评论组件跟着切换（engage.js 监听）
+    try {
+      document.dispatchEvent(new CustomEvent("blog-theme", { detail: { theme: theme } }));
+    } catch (e) {}
   }
 
   // 启动时立即应用（避免闪烁：本脚本应在 head 末尾或 body 起始处同步引入）

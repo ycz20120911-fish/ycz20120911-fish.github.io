@@ -351,3 +351,38 @@ main {
 .fallback-list { list-style: none; padding: 0; }
 .fallback-list li { padding: 12px 0; border-bottom: 1px solid var(--border); }
 .fallback-list a { font-weight: 600; }
+
+/* ===== 转发与评论 ===== */
+.engage {
+  max-width: var(--max-w-post);
+  margin: 48px auto 0;
+}
+.share-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 28px;
+}
+.share-btn {
+  appearance: none;
+  background: var(--bg-elev);
+  color: var(--fg);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 4px 12px;
+  font: inherit;
+  font-size: 13px;
+  line-height: 1.6;
+  cursor: pointer;
+}
+.share-btn:hover { border-color: var(--accent); color: var(--accent); }
+.share-btn:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.share-btn[hidden] { display: none; }
+.share-status { font-size: 13px; color: var(--fg-muted); }
+.comments h2 {
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0 0 12px;
+}
+.giscus, .giscus-frame { width: 100%; }
