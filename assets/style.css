@@ -337,6 +337,32 @@ main {
   color: var(--fg-muted);
   font-size: 13px;
 }
+.visit-count {
+  margin-top: 6px;
+  font-size: 13px;
+  color: var(--fg-muted);
+  line-height: 1.6;
+}
+/* 不蒜子成功后会把容器写成 display:inline；改回独立一行，失败时保持隐藏。 */
+#busuanzi_container_site_pv[style*="display: inline"],
+#busuanzi_container_site_pv[style*="display:inline"] {
+  display: block !important;
+}
+.read-count {
+  margin-top: 14px;
+  text-align: center;
+  font-size: 13px;
+  color: var(--fg-muted);
+}
+.read-count[hidden] { display: none; }
+.bsz-frame {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border: 0;
+  opacity: 0;
+  pointer-events: none;
+}
 
 /* ===== 响应式 ===== */
 @media (max-width: 720px) {

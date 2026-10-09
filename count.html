@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="robots" content="noindex">
+  <title>count</title>
+  <script>
+    // 不蒜子按 Referer 的路径计 page_pv，查询串会被丢掉。
+    // 先换成 /p/<slug>，再加载官方脚本，父页面地址保持 post.html?p=。
+    (function () {
+      var slug = "";
+      try { slug = (new URLSearchParams(location.search).get("p") || "").trim(); } catch (e) {}
+      if (!/^[A-Za-z0-9_-]+$/.test(slug)) return;
+      window.__countSlug = slug;
+      if (location.pathname !== "/p/" + slug) history.replaceState(null, "", "/p/" + slug);
+    })();
+  </script>
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+</head>
+<body>
+  <span id="busuanzi_container_page_pv" style="display:none"><span id="busuanzi_value_page_pv"></span></span>
+  <script>
+    (function () {
+      var slug = window.__countSlug;
+      if (!slug || !window.parent || window.parent === window) return;
+      var started = Date.now();
+      var timer = window.setInterval(function () {
+        var el = document.getElementById("busuanzi_value_page_pv");
+        var text = el && (el.textContent || "").trim();
+        if (text && /^\d+$/.test(text)) {
+          window.clearInterval(timer);
+          window.parent.postMessage({ source: "busuanzi-article", slug: slug, pagePv: text }, location.origin);
+        } else if (Date.now() - started > 8000) {
+          window.clearInterval(timer);
+        }
+      }, 200);
+    })();
+  </script>
+</body>
+</html>
