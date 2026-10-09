@@ -71,9 +71,39 @@
       '<footer class="post-footer">' +
         '<a class="back-link" href="index.html">← 返回首页</a>' +
         '<span class="meta">最后更新于 ' + escapeHTML(dateStr) + '</span>' +
-      '</footer>';
+      '</footer>' +
+      '<p class="read-count" id="read-count" hidden>本文阅读 <span id="read-count-value"></span> 次</p>';
 
     document.title = meta.title + " · " + (document.title || "博客");
+    mountReadCount(slug);
+  }
+
+  // 不蒜子的 page_pv 只认路径、不认查询串，post.html?p= 会共用一个数。
+  // 隐藏页 count.html 先把地址换成 /p/<slug> 再请求计数，再把结果送回来。
+  function mountReadCount(slug) {
+    var line = document.getElementById("read-count");
+    var valueEl = document.getElementById("read-count-value");
+    if (!line || !valueEl || line.getAttribute("data-mounted") === "1") return;
+    line.setAttribute("data-mounted", "1");
+
+    function onMessage(event) {
+      if (event.origin !== location.origin) return;
+      var data = event.data;
+      if (!data || data.source !== "busuanzi-article" || data.slug !== slug) return;
+      var n = String(data.pagePv || "");
+      if (!/^\d+$/.test(n)) return;
+      valueEl.textContent = n;
+      line.hidden = false;
+      window.removeEventListener("message", onMessage);
+    }
+    window.addEventListener("message", onMessage);
+
+    var frame = document.createElement("iframe");
+    frame.className = "bsz-frame";
+    frame.setAttribute("aria-hidden", "true");
+    frame.tabIndex = -1;
+    frame.src = "count.html?p=" + encodeURIComponent(slug);
+    document.body.appendChild(frame);
   }
 
   function escapeHTML(s) {
