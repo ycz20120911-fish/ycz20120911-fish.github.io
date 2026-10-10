@@ -1,5 +1,13 @@
 [
   {
+    "slug": "2026-10-10-intermediary-matching",
+    "title": "从媒人到智能体：匹配正在从“推”变成“拉”",
+    "date": "2026-10-10",
+    "summary": "中介从专家、平台演进到智能体，匹配由供给方推动转向需求方拉动，按婚配模型有望提升社会匹配效率，但前提是拥堵、操纵与代理激励得到约束。",
+    "cover": "images/intermediary-matching-cover.jpg",
+    "tags": ["智能体经济", "平台经济", "市场设计"]
+  },
+  {
     "slug": "2026-10-10-agent-economy-map",
     "title": "智能体经济是一张五层地图：从 token 到规制",
     "date": "2026-10-10",
