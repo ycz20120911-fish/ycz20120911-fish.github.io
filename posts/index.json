@@ -1,5 +1,13 @@
 [
   {
+    "slug": "2026-10-10-agent-economy-map",
+    "title": "智能体经济是一张五层地图：从 token 到规制",
+    "date": "2026-10-10",
+    "summary": "从算力与 token、智能体产品、交易协议、商业模式到治理规制，智能体经济是一条层层咬合的链条，贯穿其中的问题是谁掌握入口。",
+    "cover": "images/agent-economy-map-cover.jpg",
+    "tags": ["智能体经济", "平台经济", "AI治理"]
+  },
+  {
     "slug": "2026-10-09-agent-intermediary",
     "title": "智能体作为中介：它替谁办事，又向谁收钱",
     "date": "2026-10-09",
