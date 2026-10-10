@@ -38,11 +38,11 @@
 
 这个结果是稳定的：甲虽然更想去 A，但 A 更想要乙，没有一对人能私下另起炉灶。Gale 和 Shapley 证明，无论偏好怎么排，这个程序都能找到稳定匹配。
 
-这不只是纸上的数学。2012 年诺贝尔经济学奖授予 Roth 和 Shapley，理由是“[稳定配置理论与市场设计实践](https://www.nobelprize.org/prizes/economic-sciences/2012/press-release/)”。美国住院医师匹配项目（NRMP）每年要填补约 2 万个新医生岗位，1998 年起改用 Roth 等人设计的申请者主动申请的算法（[Roth & Peranson, 1999](https://www.aeaweb.org/articles?id=10.1257/aer.89.4.748)）。纽约市高中招生改用延迟接受后，第一年没有被分到任何志愿学校的学生，从前一年的约 3 万人降到约 3000 人；作者特别指出，很大一部分改进来自允许学生填报 12 个志愿而不是 5 个，以及每个学生只拿一个录取（[Abdulkadiroğlu, Pathak & Roth, 2005](https://web.stanford.edu/~alroth/papers/nycAEAPP.pdf)）。
+这不只是纸上的数学。2012 年诺贝尔经济学奖授予 Roth 和 Shapley，理由是“[稳定配置理论与市场设计实践](https://www.nobelprize.org/prizes/economic-sciences/2012/press-release/)”。美国住院医师匹配项目（NRMP）每年要填补约 2 万个新医生岗位，1998 年起改用 Roth 等人设计的申请者主动申请的算法（[Roth & Peranson, 1999](https://www.aeaweb.org/articles?id=10.1257/aer.89.4.748)）。不过，他们用往年的真实偏好数据比较新旧两种算法，发现结果几乎一样，受影响的申请者只有约千分之一；改革的主要收益是让如实填报偏好成为申请者的最优策略，并能更好地安排医生夫妻同城这类配对。纽约市高中招生改用延迟接受后，第一年没有被分到任何志愿学校的学生，从前一年的约 3 万人降到约 3000 人；作者特别指出，很大一部分改进来自允许学生填报 12 个志愿而不是 5 个，以及每个学生只拿一个录取（[Abdulkadiroğlu, Pathak & Roth, 2005](https://web.stanford.edu/~alroth/papers/nycAEAPP.pdf)）。
 
 ## 智能体为什么可能提高匹配效率
 
-纽约的例子对我很有启发：让人表达更完整的偏好，匹配就会更好。
+这两个例子放在一起看很有意思。NRMP 原本就是集中匹配，只是换了“谁先申请”，结果变化很小；纽约则是从各校分散录取变成集中协调，同时让学生能填更多志愿，改进就大得多。可见匹配效率的提升，主要不在算法本身，而在于让人表达更完整的偏好，并把分散的决定协调起来。
 
 人自己找对象、找工作，能比较的选项很少，偏好清单往往只有前几名，剩下的全靠运气。智能体改变的正是这一点。第一，它能替你把偏好表达得更完整，覆盖的范围接近整个市场，而不只是平台推给你的那一页；第二，它能主动去申请、去问，相当于让延迟接受的过程在现实里跑起来；第三，搜寻和谈判的成本大幅下降，以前因为太麻烦而放弃的选项，现在也能被考虑。
 
@@ -54,7 +54,11 @@ Shahidi 等人在 NBER 工作论文《[The Coasean Singularity?](https://www.nbe
 
 一是拥堵。申请成本趋近于零，结果可能是人人海投，对方被淹没。招聘市场已经出现了这个苗头：据《纽约时报》[报道](https://www.nytimes.com/2025/06/21/business/dealbook/ai-job-applications.html)，LinkedIn 上的求职申请一年增长超过 45%，生成式 AI 和自动投递工具是推手之一；企业则用 AI 筛选来应对，形成一场军备竞赛。Roth 在《[What Have We Learned from Market Design?](https://www.nber.org/papers/w13530)》中总结过，好的市场要足够“厚”，要克服拥堵，还要让参与者安全、简单地表达真实偏好。经济学博士就业市场的做法值得借鉴：美国经济学会让每位求职者最多向两家雇主发送“特别感兴趣”的信号，正因为数量有限，信号才可信（[Coles et al., 2010](https://www.aeaweb.org/articles?id=10.1257/jep.24.4.187)）。智能体时代可能需要类似的“稀缺信号”。另外，Roth 和 Xing 关于市场“抢跑”的[研究](https://web.stanford.edu/~alroth/jump.html)也提醒我们，协调失败会让交易越做越早、越做越乱。
 
-二是策略性行为。如果卖方知道买方是智能体，就会专门针对智能体优化。Allouah 等人的[实验](https://arxiv.org/abs/2508.02630)发现，卖方用 AI 简单改写商品描述，就能显著提高被购物智能体选中的份额。Greenhouse 的[调查](https://www.greenhouse.com/newsroom/an-ai-trust-crisis-70-of-hiring-managers-trust-ai-to-make-faster-and-better-hiring-decisions-only-8-of-job-seekers-call-it-fair)中，41% 的美国求职者自称用过提示注入来绕过 AI 筛选。偏好表达得再完整，信息一旦被操纵，匹配也会失真。
+二是策略性行为，我把它称为“智能体 SEO”。过去商家做搜索引擎优化（SEO），是为了在百度、谷歌的排名里靠前；以后买家换成了智能体，商家就会转而琢磨智能体怎么读信息、怎么做选择，专门为它“包装”自己。Allouah 等人的[实验](https://arxiv.org/abs/2508.02630)发现，卖方用 AI 简单改写商品描述，就能显著提高被购物智能体选中的份额。Greenhouse 的[调查](https://www.greenhouse.com/newsroom/an-ai-trust-crisis-70-of-hiring-managers-trust-ai-to-make-faster-and-better-hiring-decisions-only-8-of-job-seekers-call-it-fair)中，41% 的美国求职者自称用过提示注入来绕过 AI 筛选。这就是智能体 SEO 的雏形：卖方和求职者优化的不再是给人看的内容，而是给代理看的信号。偏好表达得再完整，信息一旦被操纵，匹配也会失真；平台时代的排名之争，可能会原样搬到智能体时代。
+
+![智能体 SEO：商家不再讨好顾客，而是讨好替顾客挑货的智能体](images/agent-seo.jpg)
+
+*智能体 SEO：商家忙着讨好替顾客挑货的智能体，顾客本人反倒被晾在一边。*
 
 三是稳定不等于福利最高。延迟接受得到的结果，对主动申请的一方最有利。Gale 和 Shapley 在 1962 年的论文里就证明了这一点。NRMP 当年的争论，焦点正是算法偏向医院还是偏向申请者（[Roth & Peranson, 1997](https://jamanetwork.com/journals/jama/article-abstract/418088)）。在智能体市场里，谁的代理先出手、谁在“申请”，就会影响福利怎么分配。
 
