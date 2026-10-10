@@ -24,7 +24,7 @@
   <main>
     <section class="hero">
       <h1>记录日常，留一份温度</h1>
-      <p>这里写所见、所读、所想。文章按时间倒序排列，点击卡片即可阅读全文。</p>
+      <p>这里写所见、所读、所想。文章按时间倒序排列，可从目录直接跳转，或点击卡片阅读全文。</p>
     </section>
 
     <!-- JS 渲染失败时的退化展示（仅链接到示例文章） -->
@@ -35,8 +35,31 @@
       </ul>
     </noscript>
 
-    <div id="status" class="status">正在加载文章…</div>
-    <div id="post-list" class="post-list" aria-live="polite"></div>
+    <div class="home-body">
+      <div class="home-feed">
+        <div id="status" class="status">正在加载文章…</div>
+        <div id="post-list" class="post-list" aria-live="polite"></div>
+      </div>
+
+      <aside class="directory" id="directory" hidden>
+        <details class="directory-panel" id="directory-panel">
+          <summary class="directory-summary">
+            <span class="directory-heading">
+              <span id="directory-title">文章目录</span>
+              <span class="directory-count" id="directory-count"></span>
+            </span>
+            <span class="directory-chevron" aria-hidden="true"></span>
+          </summary>
+          <div class="directory-body">
+            <label class="directory-search">
+              <span class="visually-hidden">搜索文章</span>
+              <input id="directory-search" type="search" placeholder="搜索标题或标签" autocomplete="off" autocapitalize="off" spellcheck="false">
+            </label>
+            <nav id="directory-list" class="directory-list" aria-label="文章目录"></nav>
+          </div>
+        </details>
+      </aside>
+    </div>
   </main>
 
   <footer class="site-footer">
