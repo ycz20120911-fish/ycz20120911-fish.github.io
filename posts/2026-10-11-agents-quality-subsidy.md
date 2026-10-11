@@ -1,6 +1,6 @@
 # 智能体会补贴好产品吗？——从 Collison 的“质量补贴”说起
 
-北京时间 10 月 10 日早上，Stripe 的 CEO Patrick Collison 在 X 上发了一篇长帖，题目很随意：“Assorted things I've been mulling over regarding agents in the economy”（关于经济中的智能体，我最近琢磨的几件事）。[这篇帖子](https://x.com/patrickc/status/2108706907859116280)到我写作时已有约 132 万次浏览。里面最常被转引的是这一句：
+北京时间 10 月 10 日早上，Stripe 的 CEO Patrick Collison 发了一篇长帖，题目很随意：“Assorted things I've been mulling over regarding agents in the economy”（关于经济中的智能体，我最近琢磨的几件事）。[这篇帖子](https://x.com/patrickc/status/2108706907859116280)到我写作时已有约 132 万次浏览。里面最常被转引的是这一句：
 
 > “Personal agents will, I think, act as a kind of structural subsidy for product quality. How would markets look different if individuals always spent at least 10 hours researching their purchases?”
 
