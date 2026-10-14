@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900" role="img" aria-label="越权率：单个智能体约 4%，多智能体团队难任务约 66%">
+<rect width="1600" height="900" fill="#f8f6f1"/><g font-family="'Noto Sans CJK SC','Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif">
+<text x="80" y="110" font-size="48" font-weight="700" fill="#14213d">每一笔都合规，加起来却超支了</text>
+<text x="80" y="160" font-size="26" fill="#6b7280">越权班次占比 · 模拟医院实验（Omar et al., 2026）</text>
+<line x1="300" y1="720" x2="1340" y2="720" stroke="#14213d" stroke-width="3"/>
+<rect x="430" y="693.1" width="240" height="26.9" rx="10" fill="#14213d"/><text x="550" y="669.1" text-anchor="middle" font-size="56" font-weight="800" fill="#14213d">约 4%</text><text x="550" y="770" text-anchor="middle" font-size="30" fill="#14213d">单个智能体</text><rect x="930" y="276.9" width="240" height="443.1" rx="10" fill="#f28c28"/><text x="1050" y="252.9" text-anchor="middle" font-size="56" font-weight="800" fill="#f28c28">约 66%</text><text x="1050" y="770" text-anchor="middle" font-size="30" fill="#14213d">多智能体团队（难任务）</text>
+<rect x="1220" y="300" width="300" height="150" rx="14" fill="#fff" stroke="#f28c28" stroke-width="2"/>
+<text x="1370" y="358" text-anchor="middle" font-size="30" font-weight="700" fill="#c2410c">46 个团队班次</text>
+<text x="1370" y="404" text-anchor="middle" font-size="24" fill="#14213d">每笔都合规</text>
+<text x="1370" y="436" text-anchor="middle" font-size="24" fill="#14213d">但总额超支</text>
+</g></svg>
