@@ -1,5 +1,13 @@
 [
   {
+    "slug": "2026-10-14-overthinking",
+    "title": "你付的 AI 账单里，有多少是\"想多了\"？",
+    "date": "2026-10-14",
+    "summary": "约 64% 的思考 token 产生在正确率见顶之后，而输出 token 约占智能体账单的 92%，过度思考的成本落在最贵的那一块。",
+    "cover": "images/overthinking-cover.svg",
+    "tags": ["智能体经济", "委托代理", "定价"]
+  },
+  {
     "slug": "2026-10-11-agents-quality-subsidy",
     "title": "智能体会补贴好产品吗？——从 Collison 的“质量补贴”说起",
     "date": "2026-10-11",
