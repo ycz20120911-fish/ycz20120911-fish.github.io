@@ -1,0 +1,131 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900" role="img" aria-label="水箱代表总额，水管分到几个智能体，每个出口是单笔授权的水龙头">
+  <defs>
+    <linearGradient id="water" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#5eead4"/>
+      <stop offset="38%" stop-color="#14b8a6"/>
+      <stop offset="100%" stop-color="#0f766e"/>
+    </linearGradient>
+    <linearGradient id="pipe" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2dd4bf"/>
+      <stop offset="48%" stop-color="#0f766e"/>
+      <stop offset="100%" stop-color="#115e59"/>
+    </linearGradient>
+    <clipPath id="tankInner">
+      <rect x="96" y="188" width="408" height="552" rx="34"/>
+    </clipPath>
+    <filter id="soft" x="-25%" y="-25%" width="150%" height="150%">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#14213d" flood-opacity="0.07"/>
+    </filter>
+    <symbol id="faucet" overflow="visible">
+      <rect x="-2" y="-32" width="56" height="64" rx="16" fill="#e07a5f"/>
+      <rect x="10" y="-46" width="32" height="18" rx="7" fill="#c45c48"/>
+      <rect x="21" y="-68" width="10" height="26" rx="5" fill="#c4922a"/>
+      <ellipse cx="26" cy="-70" rx="28" ry="11" fill="#e9b44c"/>
+      <ellipse cx="26" cy="-72" rx="14" ry="4.5" fill="#fff6df"/>
+      <circle cx="26" cy="-70" r="3.5" fill="#c4922a"/>
+      <path d="M26 32 C26 58 70 68 128 68" fill="none" stroke="#e07a5f" stroke-width="15" stroke-linecap="round"/>
+      <circle cx="130" cy="68" r="8" fill="#c45c48"/>
+      <path d="M130 84 C123 96 119 108 130 122 C141 108 137 96 130 84 Z" fill="#2dd4bf"/>
+      <ellipse cx="126" cy="100" rx="2.4" ry="4" fill="#ffffff" opacity="0.8"/>
+    </symbol>
+  </defs>
+
+  <rect width="1600" height="900" fill="#f8f6f1"/>
+  <circle cx="1488" cy="96" r="180" fill="#ccfbf1" opacity="0.45"/>
+  <circle cx="70" cy="96" r="120" fill="#fde7c7" opacity="0.55"/>
+  <circle cx="1520" cy="820" r="150" fill="#f8d5ce" opacity="0.4"/>
+
+  <g filter="url(#soft)">
+    <rect x="80" y="172" width="440" height="584" rx="48" fill="#ffffff" stroke="#0f766e" stroke-width="14"/>
+  </g>
+  <g clip-path="url(#tankInner)">
+    <path d="M96 468 C170 430 240 508 330 462 C410 422 470 468 504 444 L504 756 L96 756 Z" fill="url(#water)"/>
+    <path d="M96 452 C176 418 246 496 340 450 C410 416 468 456 504 436 L504 478 C450 508 380 458 310 492 C230 530 160 470 96 500 Z" fill="#99f6e4" opacity="0.9"/>
+    <circle cx="180" cy="600" r="16" fill="#ccfbf1" opacity="0.5"/>
+    <circle cx="290" cy="680" r="24" fill="#e6fffb" opacity="0.28"/>
+    <circle cx="400" cy="590" r="9" fill="#ffffff" opacity="0.5"/>
+    <circle cx="240" cy="520" r="6" fill="#ffffff" opacity="0.6"/>
+    <circle cx="350" cy="730" r="11" fill="#ccfbf1" opacity="0.4"/>
+  </g>
+  <g stroke="#0f766e" stroke-linecap="round" opacity="0.28">
+    <line x1="118" y1="250" x2="154" y2="250" stroke-width="4"/>
+    <line x1="118" y1="314" x2="172" y2="314" stroke-width="4"/>
+    <line x1="118" y1="378" x2="154" y2="378" stroke-width="4"/>
+    <line x1="118" y1="442" x2="172" y2="442" stroke-width="4"/>
+    <line x1="118" y1="506" x2="154" y2="506" stroke-width="4"/>
+    <line x1="118" y1="570" x2="172" y2="570" stroke-width="4"/>
+    <line x1="118" y1="634" x2="154" y2="634" stroke-width="4"/>
+    <line x1="118" y1="698" x2="172" y2="698" stroke-width="4"/>
+  </g>
+  <path d="M168 456 H268" stroke="#e9b44c" stroke-width="6" stroke-linecap="round"/>
+  <circle cx="168" cy="456" r="7" fill="#e9b44c"/>
+
+  <g font-family="'PingFang SC','Microsoft YaHei','Noto Sans CJK SC','Noto Sans CJK','WenQuanYi Micro Hei',sans-serif">
+    <rect x="140" y="64" width="320" height="74" rx="37" fill="#0f766e"/>
+    <text x="300" y="101" text-anchor="middle" dominant-baseline="middle" font-size="36" font-weight="700" fill="#ffffff">水箱 · 总额</text>
+  </g>
+
+  <!-- one outlet, three branches -->
+  <rect x="494" y="666" width="180" height="48" rx="24" fill="url(#pipe)"/>
+  <rect x="516" y="682" width="140" height="12" rx="6" fill="#99f6e4" opacity="0.9"/>
+  <rect x="640" y="246" width="50" height="468" rx="25" fill="url(#pipe)"/>
+  <rect x="654" y="270" width="14" height="424" rx="7" fill="#99f6e4" opacity="0.75"/>
+  <rect x="664" y="246" width="500" height="48" rx="24" fill="url(#pipe)"/>
+  <rect x="690" y="260" width="450" height="12" rx="6" fill="#99f6e4" opacity="0.9"/>
+  <rect x="664" y="456" width="500" height="48" rx="24" fill="url(#pipe)"/>
+  <rect x="690" y="470" width="450" height="12" rx="6" fill="#99f6e4" opacity="0.9"/>
+  <rect x="664" y="666" width="500" height="48" rx="24" fill="url(#pipe)"/>
+  <rect x="690" y="680" width="450" height="12" rx="6" fill="#99f6e4" opacity="0.9"/>
+  <g fill="#115e59">
+    <circle cx="688" cy="270" r="15"/>
+    <circle cx="688" cy="480" r="15"/>
+    <circle cx="688" cy="690" r="15"/>
+  </g>
+  <g fill="#ccfbf1">
+    <circle cx="688" cy="270" r="5.5"/>
+    <circle cx="688" cy="480" r="5.5"/>
+    <circle cx="688" cy="690" r="5.5"/>
+  </g>
+
+  <use href="#faucet" x="1152" y="270"/>
+  <use href="#faucet" x="1152" y="480"/>
+  <use href="#faucet" x="1152" y="690"/>
+
+  <g>
+    <g transform="translate(1364,372)">
+      <circle r="64" fill="#ffffff"/>
+      <circle r="58" fill="#d7f7f3"/>
+      <circle cy="8" r="30" fill="#0f766e"/>
+      <line x1="0" y1="-22" x2="0" y2="-48" stroke="#0f766e" stroke-width="4" stroke-linecap="round"/>
+      <circle cy="-54" r="7" fill="#e9b44c"/>
+      <circle cx="-11" cy="2" r="3.5" fill="#ffffff"/>
+      <circle cx="11" cy="2" r="3.5" fill="#ffffff"/>
+      <path d="M-10 16 Q0 24 10 16" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round"/>
+    </g>
+    <g transform="translate(1364,582)">
+      <circle r="64" fill="#ffffff"/>
+      <circle r="58" fill="#fde4dc"/>
+      <circle cy="8" r="30" fill="#e07a5f"/>
+      <line x1="0" y1="-22" x2="0" y2="-48" stroke="#e07a5f" stroke-width="4" stroke-linecap="round"/>
+      <circle cy="-54" r="7" fill="#e9b44c"/>
+      <circle cx="-11" cy="2" r="3.5" fill="#ffffff"/>
+      <circle cx="11" cy="2" r="3.5" fill="#ffffff"/>
+      <path d="M-10 16 Q0 24 10 16" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round"/>
+    </g>
+    <g transform="translate(1364,792)">
+      <circle r="64" fill="#ffffff"/>
+      <circle r="58" fill="#fdf0d0"/>
+      <circle cy="8" r="30" fill="#e9b44c"/>
+      <line x1="0" y1="-22" x2="0" y2="-48" stroke="#c4922a" stroke-width="4" stroke-linecap="round"/>
+      <circle cy="-54" r="7" fill="#0f766e"/>
+      <circle cx="-11" cy="2" r="3.5" fill="#14213d"/>
+      <circle cx="11" cy="2" r="3.5" fill="#14213d"/>
+      <path d="M-10 16 Q0 24 10 16" fill="none" stroke="#14213d" stroke-width="3" stroke-linecap="round"/>
+    </g>
+  </g>
+
+  <g font-family="'PingFang SC','Microsoft YaHei','Noto Sans CJK SC','Noto Sans CJK','WenQuanYi Micro Hei',sans-serif">
+    <rect x="1124" y="64" width="360" height="74" rx="37" fill="#e07a5f"/>
+    <text x="1304" y="101" text-anchor="middle" dominant-baseline="middle" font-size="36" font-weight="700" fill="#ffffff">水龙头 · 单笔</text>
+  </g>
+</svg>
