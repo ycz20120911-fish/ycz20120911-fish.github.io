@@ -1,5 +1,13 @@
 [
   {
+    "slug": "2026-10-16-agent-access",
+    "title": "谁有权替你下单？——智能体经济的入口之争",
+    "date": "2026-10-16",
+    "summary": "豆包被拦、千问放行，亚马逊诉 Perplexity，Meta 独占 WhatsApp：平台禁外放内，争的是代理接入权；应承认用户授权、标准化代理身份、自家与第三方同规则接入。",
+    "cover": "images/agent-access-cover.jpg",
+    "tags": ["智能体经济", "平台反垄断", "代理接入权"]
+  },
+  {
     "slug": "2026-10-15-agentvalve-evalue",
     "title": "单笔都合规，钱还是花超了——多智能体预算里的「水龙头」和「水箱」",
     "date": "2026-10-15",
